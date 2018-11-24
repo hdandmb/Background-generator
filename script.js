@@ -6,7 +6,9 @@ var body = document.getElementById("gradient");
 
 function changeBackground() {
     body.style.background = "linear-gradient(to right, " 
-    +  input1.value + ", " + input2.value + ")"
+    +  input1.value + ", " + input2.value + ")";
+
+    css.textContent = body.style.background + ";"
 };
 //Add EventListener to input1 and input2    
 input1.addEventListener("input", changeBackground)
